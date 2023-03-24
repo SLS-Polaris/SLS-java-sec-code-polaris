@@ -1,3 +1,7 @@
+# This action is the first of three on https://github.com/marketplace/actions/synopsys-action
+# this action uses buildless scanning. It is not recomended for PR. 
+
+
 name: Synopsys Security Testing
 
 on:
