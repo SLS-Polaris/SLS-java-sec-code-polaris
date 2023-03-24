@@ -18,12 +18,9 @@ jobs:
       - name: Synopsys Action
         uses: synopsys-sig/synopsys-action@v1.0.0
         with:
-          demo_coverity_url: ${{ secrets.COVERITY_URL }}   # using Demo.coverity
-          demo_coverity_user: ${{ secrets.COVERITY_USER }} # using Siguser 
-          demo_coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }} # this is secret still
-          # coverity_url: ${{ secrets.COVERITY_URL }}   # using local coverity at http://desktop-8rfc423:8081 instead of Demo.coverity
-          # coverity_user: ${{ secrets.COVERITY_USER }} #using user = GitHubAction
-          # coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }} # this is secret still
+          coverity_url: ${{ secrets.COVERITY_URL }}  
+          coverity_user: ${{ secrets.COVERITY_USER }}
+          coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
           # Many customers prefer to set their Coverity project and stream names to match
           # the GitHub repository name
           coverity_project_name: ${{ secrets.COVERITY_PROJECT_NAME }}  # set to SLS-java-sec-code-polaris
