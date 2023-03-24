@@ -2,7 +2,7 @@
 # this action uses buildless scanning. It is not recomended for PR. 
 
 
-name: Synopsys Security Testing
+name: Synopsys Security Testing - buildless
 
 on:
   push:
